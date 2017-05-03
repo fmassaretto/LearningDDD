@@ -3,8 +3,74 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Apresentation", "1 - Apresentation", "{C5D5FDDE-2A5A-4834-B9B6-135D07FE1C12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Aplication", "2 - Aplication", "{250AD461-E791-45B6-B8CA-1FA7A1E81F6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Services", "3 - Services", "{6BA903C4-FE37-4300-8765-3E4059C95047}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{0128DC95-C214-4DF7-A121-9E7A1005F314}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infrastructure", "5 - Infrastructure", "{CB966034-5C30-4FE9-ACAD-2974AB455DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDDD.Apresentation.WebAPI", "LearningDDD.Apresentation.WebAPI\LearningDDD.Apresentation.WebAPI.csproj", "{0C77C9CA-C9A1-472A-A3D4-C052469B8B54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDDD.Aplication", "LearningDDD.Aplication\LearningDDD.Aplication.csproj", "{6399E686-F981-4733-B4B2-5202F7556E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDDD.Services", "LearningDDD.Services\LearningDDD.Services.csproj", "{8441F54A-27C7-447F-A9B9-176642E89C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDDD.Domain", "LearningDDD.Domain\LearningDDD.Domain.csproj", "{7C6300C9-7ED0-45A3-9435-52A2D114A005}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Repository", "5.1 - Repository", "{8D4E680E-8F51-4F12-8A84-47446DA60414}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{0F6BE0A5-4E65-4E20-B69C-2C32F82B6F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDDD.Repository.Infra", "LearningDDD.Repository.Infra\LearningDDD.Repository.Infra.csproj", "{D8BC1118-E724-47D6-BD56-4FACA4092910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDDD.CrossCutting.IoC", "LearningDDD.CrossCutting.IoC\LearningDDD.CrossCutting.IoC.csproj", "{043DC529-2675-46A2-AC4E-88294C4961BC}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C77C9CA-C9A1-472A-A3D4-C052469B8B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C77C9CA-C9A1-472A-A3D4-C052469B8B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C77C9CA-C9A1-472A-A3D4-C052469B8B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C77C9CA-C9A1-472A-A3D4-C052469B8B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6399E686-F981-4733-B4B2-5202F7556E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6399E686-F981-4733-B4B2-5202F7556E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6399E686-F981-4733-B4B2-5202F7556E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6399E686-F981-4733-B4B2-5202F7556E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8441F54A-27C7-447F-A9B9-176642E89C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8441F54A-27C7-447F-A9B9-176642E89C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8441F54A-27C7-447F-A9B9-176642E89C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8441F54A-27C7-447F-A9B9-176642E89C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C6300C9-7ED0-45A3-9435-52A2D114A005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C6300C9-7ED0-45A3-9435-52A2D114A005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C6300C9-7ED0-45A3-9435-52A2D114A005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C6300C9-7ED0-45A3-9435-52A2D114A005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8BC1118-E724-47D6-BD56-4FACA4092910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8BC1118-E724-47D6-BD56-4FACA4092910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8BC1118-E724-47D6-BD56-4FACA4092910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8BC1118-E724-47D6-BD56-4FACA4092910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043DC529-2675-46A2-AC4E-88294C4961BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043DC529-2675-46A2-AC4E-88294C4961BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043DC529-2675-46A2-AC4E-88294C4961BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043DC529-2675-46A2-AC4E-88294C4961BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C77C9CA-C9A1-472A-A3D4-C052469B8B54} = {C5D5FDDE-2A5A-4834-B9B6-135D07FE1C12}
+		{6399E686-F981-4733-B4B2-5202F7556E90} = {250AD461-E791-45B6-B8CA-1FA7A1E81F6A}
+		{8441F54A-27C7-447F-A9B9-176642E89C90} = {6BA903C4-FE37-4300-8765-3E4059C95047}
+		{7C6300C9-7ED0-45A3-9435-52A2D114A005} = {0128DC95-C214-4DF7-A121-9E7A1005F314}
+		{8D4E680E-8F51-4F12-8A84-47446DA60414} = {CB966034-5C30-4FE9-ACAD-2974AB455DE8}
+		{0F6BE0A5-4E65-4E20-B69C-2C32F82B6F84} = {CB966034-5C30-4FE9-ACAD-2974AB455DE8}
+		{D8BC1118-E724-47D6-BD56-4FACA4092910} = {8D4E680E-8F51-4F12-8A84-47446DA60414}
+		{043DC529-2675-46A2-AC4E-88294C4961BC} = {0F6BE0A5-4E65-4E20-B69C-2C32F82B6F84}
 	EndGlobalSection
 EndGlobal
