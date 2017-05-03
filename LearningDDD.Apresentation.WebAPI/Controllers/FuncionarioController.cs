@@ -36,7 +36,7 @@ namespace LearningDDD.Apresentation.WebAPI.Controllers
 
         [HttpGet]
         [Route("Funcionario/{id}")]
-        public IHttpActionResult GetById(int id)
+        public IHttpActionResult GetById([FromUri]int id)
         {
             try
             {
